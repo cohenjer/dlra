@@ -4,7 +4,7 @@ This repository contains the codes for reproducing the dlra package.
 
 It can be easily installed by running from this repository
 pip install . -r requirements.txt
-but you should install the [mscode package](link) manually beforehand.
+but you should install the [mscode package](https://github.com/cohenjer/mscode) manually beforehand.
 
 The web documentation for the package is available under doc/build/html/index.html
 

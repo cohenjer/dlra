@@ -1,0 +1,8 @@
+mscode
+numpy
+scipy
+matplotlib
+tensorly
+plotly
+kaleido
+pandas

@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to dlra’s documentation! &#8212; DLRA package documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="#">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">DLRA package documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/index.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/todo"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Welcome to dlra’s documentation!
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-dlra.algorithms">
+     Dcoumentation for algorithms
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-dlra.utils">
+     Documentation for useful scripts
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#internal-links">
+   Internal links
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="welcome-to-dlra-s-documentation">
+<h1>Welcome to dlra’s documentation!<a class="headerlink" href="#welcome-to-dlra-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-dlra.algorithms">
+<span id="dcoumentation-for-algorithms"></span><h2>Dcoumentation for algorithms<a class="headerlink" href="#module-dlra.algorithms" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="dlra.algorithms.dlra_mf">
+<code class="sig-prename descclassname">dlra.algorithms.</code><code class="sig-name descname">dlra_mf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">rank</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">lamb_rel</span><span class="o">=</span><span class="default_value">0.01</span></em>, <em class="sig-param"><span class="n">n_iter_max</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">init</span><span class="o">=</span><span class="default_value">'random'</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-08</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">return_errors</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">cvg_criterion</span><span class="o">=</span><span class="default_value">'abs_rec_error'</span></em>, <em class="sig-param"><span class="n">inner_iter_max</span><span class="o">=</span><span class="default_value">20</span></em>, <em class="sig-param"><span class="n">method</span><span class="o">=</span><span class="default_value">'ista'</span></em>, <em class="sig-param"><span class="n">tau</span><span class="o">=</span><span class="default_value">20</span></em>, <em class="sig-param"><span class="n">itermax_calib</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dlra.algorithms.dlra_mf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary-based Matrix Factorization via alternating least squares (ALS) and Mixed Sparse Coding (MSC)
+Computes a rank-<cite>rank</cite> decomposition of Y such that
+<span class="math notranslate nohighlight">\(Y \approx DXB^T\)</span>
+with columnwise k-sparse X.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – input data matrix</p></li>
+<li><p><strong>rank</strong> (<em>int</em>) – Number of components.</p></li>
+<li><p><strong>D</strong> (<em>ndarray</em>) – Dictionary for the first mode</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Columnwise sparsity level for the first mode</p></li>
+<li><p><strong>lamb_rel</strong> (<em>float in</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em><em>, </em><em>default 0.01</em>) – Amount of regularization for MSC Fista solver.</p></li>
+<li><p><strong>n_iter_max</strong> (<em>int</em><em>, </em><em>default 100</em>) – Maximum number of iteration</p></li>
+<li><p><strong>init</strong> (<em>{'random'</em><em>, </em><em>CPTensor}</em><em>, </em><em>optional</em>) – Type of factor matrix initialization. If a CPTensor is passed, this is directly used for initalization.</p></li>
+<li><p><strong>tol</strong> (<em>float</em><em>, </em><em>optional</em><em>, </em><em>default: 1e-8</em>) – Relative reconstruction error tolerance. The
+algorithm is considered to have found a local minimum when the
+reconstruction error is less than <cite>tol</cite>.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em><em>, </em><em>optional</em>) – Level of verbosity</p></li>
+<li><p><strong>return_errors</strong> (<em>bool</em><em>, </em><em>optional</em>) – Activate return of iteration errors</p></li>
+<li><p><strong>cvg_criterion</strong> (<em>{'abs_rec_error'</em><em>, </em><em>'rec_error'}</em><em>, </em><em>optional</em>) – Stopping criterion for the outer iterations, works if <cite>tol</cite> is not None. If ‘rec_error’, iterations stop at current iteration if <span class="math notranslate nohighlight">\((previous rec_error - current rec_error) &lt; tol\)</span>. If ‘abs_rec_error’, iterations terminate when <span class="math notranslate nohighlight">\(|previous rec_error - current rec_error| &lt; tol\)</span>.</p></li>
+<li><p><strong>method</strong> (<em>string</em><em>, </em><em>default 'ista'</em>) – update strategy for the MSC problem. Can be ‘ista’, ‘iht’ or ‘homp’.</p></li>
+<li><p><strong>tau</strong> (<em>int</em><em>, </em><em>default 20</em>) – tolerance for the sparsity level of estimated X in the inner ista loops.</p></li>
+<li><p><strong>itermax_calib</strong> (<em>int</em><em>, </em><em>default 20</em>) – maximum number of regularization calibration steps.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>Decomposed Matrix</strong> (<em>list of numpy arrays</em>) – Estimated DMF factors [DX, B]</p></li>
+<li><p><strong>X</strong> (<em>numpy array</em>) – The sparse coefficients of the first factor</p></li>
+<li><p><strong>S</strong> (<em>numpy array</em>) – Support of X</p></li>
+<li><p><strong>errors</strong> (<em>list</em>) – A list of reconstruction errors at each iteration of the algorithms.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="dlra.algorithms.dlra_mf_iht">
+<code class="sig-prename descclassname">dlra.algorithms.</code><code class="sig-name descname">dlra_mf_iht</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">rank</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">step_rel</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">n_iter_max</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">init</span><span class="o">=</span><span class="default_value">'random'</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-08</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">return_errors</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">cvg_criterion</span><span class="o">=</span><span class="default_value">'abs_rec_error'</span></em>, <em class="sig-param"><span class="n">accelerate</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dlra.algorithms.dlra_mf_iht" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary-based Matrix Factorization via PALM
+solves approximately the following problem</p>
+<blockquote>
+<div><p>minimize 1/2 |Y - D&#64;X&#64;B.T|_F^2 wrt X, B s.t. |X_i|_0leq k</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – input data matrix</p></li>
+<li><p><strong>rank</strong> (<em>int</em>) – Number of components.</p></li>
+<li><p><strong>D</strong> (<em>ndarray</em>) – Dictionary for the first mode</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Columnwise sparsity level for the first mode</p></li>
+<li><p><strong>step_rel</strong> (<em>float in</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em><em> Default: 0.5</em>) – Percentage of theoretical largest stepsize actually used. Set smaller than 1 if divergence occurs.</p></li>
+<li><p><strong>n_iter_max</strong> (<em>int</em><em>, </em><em>default 100</em>) – Maximum number of iteration</p></li>
+<li><p><strong>init</strong> (<em>{'random'</em><em>, </em><em>[</em><em>DX</em><em>, </em><em>B</em><em>]</em><em>]</em><em>}</em><em>, </em><em>optional</em>) – Type of factor matrix initialization. If a list of factors is passed, it is directly used for initalization. See <cite>initialize_factors</cite>.</p></li>
+<li><p><strong>tol</strong> (<em>float</em><em>, </em><em>default: 1e-8</em>) – Relative reconstruction error tolerance. The algorithm is considered to have found a local minimum when the
+reconstruction error is less than <cite>tol</cite>.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em><em>, </em><em>optional</em>) – Level of verbosity</p></li>
+<li><p><strong>return_errors</strong> (<em>bool</em><em>, </em><em>optional</em>) – Activate return of iteration errors</p></li>
+<li><p><strong>cvg_criterion</strong> (<em>{'abs_rec_error'</em><em>, </em><em>'rec_error'}</em><em>, </em><em>optional</em>) – Stopping criterion for the outer iterations, works if <cite>tol</cite> is not None. If ‘rec_error’, iterations stop at current iteration if <span class="math notranslate nohighlight">\((previous rec_error - current rec_error) &lt; tol\)</span>. If ‘abs_rec_error’, iterations terminate when <span class="math notranslate nohighlight">\(|previous rec_error - current rec_error| &lt; tol\)</span>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>Decomposed Matrix</strong> (<em>list of numpy arrays</em>) – Estimated DMF factors [DX, B]</p></li>
+<li><p><strong>X</strong> (<em>numpy array</em>) – The sparse coefficients of the first factor</p></li>
+<li><p><strong>S</strong> (<em>numpy array</em>) – Support of X</p></li>
+<li><p><strong>errors</strong> (<em>list</em>) – A list of reconstruction errors at each iteration of the algorithms.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="dlra.algorithms.dlra_parafac">
+<code class="sig-prename descclassname">dlra.algorithms.</code><code class="sig-name descname">dlra_parafac</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tensor</span></em>, <em class="sig-param"><span class="n">rank</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">lamb_rel</span><span class="o">=</span><span class="default_value">0.01</span></em>, <em class="sig-param"><span class="n">n_iter_max</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">init</span><span class="o">=</span><span class="default_value">'svd'</span></em>, <em class="sig-param"><span class="n">X0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-08</span></em>, <em class="sig-param"><span class="n">random_state</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">return_errors</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">cvg_criterion</span><span class="o">=</span><span class="default_value">'abs_rec_error'</span></em>, <em class="sig-param"><span class="n">fixed_modes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">inner_iter_max</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">nonnegative</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">tau</span><span class="o">=</span><span class="default_value">20</span></em>, <em class="sig-param"><span class="n">itermax_calib</span><span class="o">=</span><span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dlra.algorithms.dlra_parafac" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary-based CANDECOMP/PARAFAC decomposition via alternating least squares (ALS) and Mixed Sparse Coding (MSC)
+Computes a rank-<cite>rank</cite> decomposition of <cite>tensor</cite> such that:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tensor</span> <span class="o">=</span> <span class="p">[</span><span class="o">|</span><span class="n">weights</span><span class="p">;</span> <span class="n">factors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">...</span><span class="p">,</span> <span class="n">factors</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">|</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>with factors[0] = DX, for input dictionary D and columnwise k-sparse X.
+This solves approximately the following problem</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(minimize\; \frac{1}{2} \|tensor - DX(B\odot C)^T\|_F^2\; wrt\; X, B, C \; s.t. \; \|X_i\|_0\leq k\)</span></p>
+</div></blockquote>
+<p>Constrained mode is necessarily the first one in this implementation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tensor</strong> (<em>ndarray</em>) – </p></li>
+<li><p><strong>rank</strong> (<em>int</em>) – Number of components.</p></li>
+<li><p><strong>D</strong> (<em>list of ndarray</em>) – Dictionary for the first mode, or dictionary modes. E.g. [D1, D2] constraints modes 0 and 1.</p></li>
+<li><p><strong>k</strong> (<em>list of int</em>) – Columnwise sparsity level for the first mode or for dictionary modes</p></li>
+<li><p><strong>lamb_rel</strong> (<em>list of float in</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em><em> Default: 0.1</em>) – Amount of regularization for MSC Fista solver.</p></li>
+<li><p><strong>n_iter_max</strong> (<em>int</em>) – Maximum number of</p></li>
+<li><p><strong>X0</strong> (<em>list of arrays</em>) – Initial values for the sparse coefficients.</p></li>
+<li><p><strong>init</strong> (<em>{'svd'</em><em>, </em><em>'random'</em><em>, </em><em>CPTensor}</em><em>, </em><em>optional</em>) – Type of factor matrix initialization.
+If a CPTensor is passed, this is directly used for initalization.
+See <cite>initialize_factors</cite>.</p></li>
+<li><p><strong>tol</strong> (<em>float</em><em>, </em><em>optional</em>) – (Default: 1e-8) Relative reconstruction error tolerance. The
+algorithm is considered to have found a local minimum when the
+reconstruction error is less than <cite>tol</cite>.</p></li>
+<li><p><strong>random_state</strong> (<em>{None</em><em>, </em><em>int</em><em>, </em><em>np.random.RandomState}</em>) – </p></li>
+<li><p><strong>verbose</strong> (<em>int</em><em>, </em><em>optional</em>) – Level of verbosity</p></li>
+<li><p><strong>return_errors</strong> (<em>bool</em><em>, </em><em>optional</em>) – Activate return of iteration errors</p></li>
+<li><p><strong>cvg_criterion</strong> (<em>{'abs_rec_error'</em><em>, </em><em>'rec_error'}</em><em>, </em><em>optional</em>) – Stopping criterion for ALS, works if <cite>tol</cite> is not None.
+If ‘rec_error’,  ALS stops at current iteration if <code class="docutils literal notranslate"><span class="pre">(previous</span> <span class="pre">rec_error</span> <span class="pre">-</span> <span class="pre">current</span> <span class="pre">rec_error)</span> <span class="pre">&lt;</span> <span class="pre">tol</span></code>.
+If ‘abs_rec_error’, ALS terminates when <cite>|previous rec_error - current rec_error| &lt; tol</cite>.</p></li>
+<li><p><strong>fixed_modes</strong> (<em>list</em><em>, </em><em>default is None</em>) – A list of modes for which the initial value is not modified.
+The last mode cannot be fixed due to error computation.</p></li>
+<li><p><strong>nonnegative</strong> (<em>bool</em>) – Set to True to have nn constraints everywhere, with nnls solver HALS as implemented in Tensorly.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>CPTensor</strong> (<em>(weight, factors)</em>) – Estimated DCPD tensor in cp_tensor tensorly format.</p></li>
+<li><p><strong>X</strong> (<em>numpy array</em>) – The sparse coefficients of the first factor.</p></li>
+<li><p><strong>S</strong> (<em>numpy array</em>) – Support of X</p></li>
+<li><p><strong>errors</strong> (<em>list</em>) – A list of reconstruction errors at each iteration of the algorithms.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="dlra.algorithms.palm_Dparafac">
+<code class="sig-prename descclassname">dlra.algorithms.</code><code class="sig-name descname">palm_Dparafac</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tensor</span></em>, <em class="sig-param"><span class="n">rank</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">step_rel</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">n_iter_max</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">init</span><span class="o">=</span><span class="default_value">'svd'</span></em>, <em class="sig-param"><span class="n">X0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-08</span></em>, <em class="sig-param"><span class="n">random_state</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">return_errors</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">cvg_criterion</span><span class="o">=</span><span class="default_value">'abs_rec_error'</span></em>, <em class="sig-param"><span class="n">nonnegative</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">accelerate</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dlra.algorithms.palm_Dparafac" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary-based Parafac Decomposition via PALM
+Computes a rank-<cite>rank</cite> decomposition of <cite>tensor</cite> such that:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tensor</span> <span class="o">=</span> <span class="p">[</span><span class="o">|</span><span class="n">weights</span><span class="p">;</span> <span class="n">factors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">...</span><span class="p">,</span> <span class="n">factors</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">|</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>with factors[0] = DX, for input dictionary D and columnwise k-sparse X.
+This solves approximately the following problem</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(minimize\; \frac{1}{2} \|tensor - DX(B\odot C)^T\|_F^2\; wrt\; X, B, C \; s.t. \; \|X_i\|_0\leq k\)</span></p>
+</div></blockquote>
+<p>Constrained mode is necessarily the first one in this implementation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tensor</strong> (<em>ndarray</em>) – Input data</p></li>
+<li><p><strong>rank</strong> (<em>int</em>) – Number of components.</p></li>
+<li><p><strong>D</strong> (<em>ndarray</em>) – Dictionary for the first mode</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Columnwise sparsity level for the first mode</p></li>
+<li><p><strong>lamb_rel</strong> (<em>float in</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em><em> Default: 0.1</em>) – Amount of regularization for MSC Fista solver.</p></li>
+<li><p><strong>step_rel</strong> (<em>float in</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em><em> Default: 0.1</em>) – Percentage of theoretical largest stepsize actually used. Set smaller than 1 if divergence occurs.</p></li>
+<li><p><strong>n_iter_max</strong> (<em>int</em>) – Maximum number of iteration</p></li>
+<li><p><strong>init</strong> (<em>{'svd'</em><em>, </em><em>'random'</em><em>, </em><em>CPTensor}</em><em>, </em><em>optional</em>) – Type of factor matrix initialization.
+If a CPTensor is passed, this is directly used for initalization.
+See <cite>initialize_factors</cite>.</p></li>
+<li><p><strong>svd</strong> (<em>str</em><em>, </em><em>default is 'numpy_svd'</em>) – function to use to compute the SVD, acceptable values in tensorly.SVD_FUNS
+of shape (rank, ), which will contain the norms of the factors</p></li>
+<li><p><strong>tol</strong> (<em>float</em><em>, </em><em>optional</em>) – (Default: 1e-6) Relative reconstruction error tolerance. The
+algorithm is considered to have found a local minimum when the
+reconstruction error is less than <cite>tol</cite>.</p></li>
+<li><p><strong>random_state</strong> (<em>{None</em><em>, </em><em>int</em><em>, </em><em>np.random.RandomState}</em>) – </p></li>
+<li><p><strong>verbose</strong> (<em>int</em><em>, </em><em>optional</em>) – Level of verbosity</p></li>
+<li><p><strong>return_errors</strong> (<em>bool</em><em>, </em><em>optional</em>) – Activate return of iteration errors</p></li>
+<li><p><strong>cvg_criterion</strong> (<em>{'abs_rec_error'</em><em>, </em><em>'rec_error'}</em><em>, </em><em>optional</em>) – Stopping criterion for ALS, works if <cite>tol</cite> is not None. If ‘rec_error’,  ALS stops at current iteration if <code class="docutils literal notranslate"><span class="pre">(previous</span> <span class="pre">rec_error</span> <span class="pre">-</span> <span class="pre">current</span> <span class="pre">rec_error)</span> <span class="pre">&lt;</span> <span class="pre">tol</span></code>. If ‘abs_rec_error’, ALS terminates when <cite>|previous rec_error - current rec_error| &lt; tol</cite>.</p></li>
+<li><p><strong>accelerate</strong> (<em>boolean</em><em>, </em><em>default True</em>) – If true, uses iPALM instead of PALM.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>CPTensor</strong> (<em>(weight, factors)</em>) – Estimated DCPD tensor in cp_tensor tensorly format.</p></li>
+<li><p><strong>X</strong> (<em>ndarray</em>) – The sparse coefficients of the first factor.</p></li>
+<li><p><strong>S</strong> (<em>numpy array</em>) – Support of X.</p></li>
+<li><p><strong>errors</strong> (<em>list</em>) – A list of reconstruction errors at each iteration of the algorithms.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-dlra.utils">
+<span id="documentation-for-useful-scripts"></span><h2>Documentation for useful scripts<a class="headerlink" href="#module-dlra.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="dlra.utils.gen_BSplines">
+<code class="sig-prename descclassname">dlra.utils.</code><code class="sig-name descname">gen_BSplines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">size_step</span></em>, <em class="sig-param"><span class="n">deg</span></em>, <em class="sig-param"><span class="n">shift</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dlra.utils.gen_BSplines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates Bsplines on [1,n] where the knots are spaces by size_step and the polynomials are degree deg. Results are stored in a matrix D. Support of atoms has size (1+deg)*size_step. By default the grid for knots is [0,size_step, 2*size_step…] but it can be shifted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<em>int</em>) – The splines are valued on [1,n]</p></li>
+<li><p><strong>size-step</strong> (<em>int</em>) – The number of indices in [1,n] between each knot</p></li>
+<li><p><strong>deg</strong> (<em>int</em>) – degree of the splines</p></li>
+<li><p><strong>shift</strong> (<em>int</em><em> (</em><em>default 0</em><em>)</em>) – Set a shift for the origin of the splines</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>D</strong> – A matrix containing the B-splines columnwise</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="dlra.utils.sam">
+<code class="sig-prename descclassname">dlra.utils.</code><code class="sig-name descname">sam</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dlra.utils.sam" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the Spectral Angular Mapper between two spectra x and y.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>numpy array</em>) – a spectra to compare with y</p></li>
+<li><p><strong>y</strong> (<em>numpy array</em>) – a spectra to compare with x</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>out</strong> – the SAM between x and y</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="internal-links">
+<h1>Internal links<a class="headerlink" href="#internal-links" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+</ul>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Jeremy E. Cohen<br/>
+        
+            &copy; Copyright 2021, Jeremy E. Cohen.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

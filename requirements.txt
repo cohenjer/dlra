@@ -1,8 +1,10 @@
-mscode
 numpy
 scipy
 matplotlib
 tensorly
-plotly
-kaleido
-pandas
+
+# toolbox for mixed sparse coding
+mscode @ git+https://github.com/cohenjer/mscode
+
+# uncomment for building experiments
+# kaleido, plotly, pandas

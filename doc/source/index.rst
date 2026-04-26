@@ -4,7 +4,7 @@ Welcome to dlra's documentation!
 Dcoumentation for algorithms
 ----------------------------
 
-.. automodule:: dlra.algorithms
+.. automodule:: dlra.algorithms.ntd
    :members:
 
 Documentation for useful scripts

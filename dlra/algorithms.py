@@ -13,7 +13,8 @@ from tensorly.cp_tensor import (cp_to_tensor, CPTensor,
                          unfolding_dot_khatri_rao, cp_norm,
                          cp_normalize, validate_cp_rank)
 from tensorly.decomposition._cp import initialize_cp, error_calc
-from tensorly.tenalg.proximal import hals_nnls
+#from tensorly.tenalg.proximal import hals_nnls
+from tensorly.solvers import hals_nnls
 import copy
 
 
@@ -89,8 +90,7 @@ def palm_Dparafac(tensor, rank, D, k, step_rel=0.5, n_iter_max=100, init='svd', 
     """
 
     # initial error
-    weights, factors = initialize_cp(tensor, rank, init=init, svd='numpy_svd',
-                                 random_state=random_state)
+    weights, factors = initialize_cp(tensor, rank, init=init, random_state=random_state)
 
     if X0 is None:
         if nonnegative:
@@ -273,8 +273,7 @@ def dlra_parafac(tensor, rank, D, k, lamb_rel=0.01, n_iter_max=100, init='svd', 
     errors : list
         A list of reconstruction errors at each iteration of the algorithms.
     """
-    weights, factors = initialize_cp(tensor, rank, init=init, svd='numpy_svd',
-                                 random_state=random_state)
+    weights, factors = initialize_cp(tensor, rank, init=init, random_state=random_state)
 
     nbr_dic = len(D)
 
@@ -326,7 +325,7 @@ def dlra_parafac(tensor, rank, D, k, lamb_rel=0.01, n_iter_max=100, init='svd', 
             if mode>nbr_dic-1:
                 mttkrp = unfolding_dot_khatri_rao(tensor, (None, factors), mode)
                 if nonnegative:
-                    factor = hals_nnls(mttkrp.T, pseudo_inverse, factors[mode].T, n_iter_max=100)[0]
+                    factor = hals_nnls(mttkrp.T, pseudo_inverse, factors[mode].T, n_iter_max=100)
                     factor = factor.T
                 else:
                     factor = tl.transpose(tl.solve(tl.transpose(pseudo_inverse), tl.transpose(mttkrp)))

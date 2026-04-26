@@ -307,7 +307,7 @@ def dlra_parafac(tensor, rank, D, k, lamb_rel=0.01, n_iter_max=100, init='svd', 
     # to compute stepsizes
     singvalD = [np.linalg.svd(DtD[l])[1][0] for l in range(nbr_dic)]
     # store best
-    err_best = np.Inf
+    err_best = np.inf
 
     for iteration in range(n_iter_max):
 
